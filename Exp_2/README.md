@@ -28,7 +28,10 @@ python trainer.py
 
 ### Additional useful command line parameters
 `--epoch` 可以設置epoch數目 (default: `20`).
-`--train_path` 用來設置你的訓練資料集的位置
+
+`--train_path` 用來設置你的訓練資料集的位置.
+
 `--eval_output_dir` 用來設置可視化的圖片的輸出位置 (default: `pairs/`).
+
 `--show_keypoints` 可以設置是否查看關鍵點的位置 (default: `False`).
 
