@@ -1,11 +1,12 @@
 # README
 
-#1.實驗一:SuperGlue在室内與室外效果的對比驗證
+#1.實驗一:SuperGlue在室内與室外效果的對比驗證<br />
 負責同學:R10922172 彭旻翊
 
 
-#2.實驗二:Physarum Dynamics 結合 SuperGlue
-##所需環境為
+#2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
+負責同學:R11922185 杜嘉煒
+##所需環境為<br />
 Python == 3.8.10 
 
 Torch == 1.13.0a0+936e930
