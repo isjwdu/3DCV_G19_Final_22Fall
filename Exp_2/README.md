@@ -35,3 +35,6 @@ python trainer.py
 
 `--show_keypoints` 可以設置是否查看關鍵點的位置 (default: `False`).
 
+## 更換訓練集
+
+若要更換爲自己的訓練集，需要命名為`COCO`+`數字`的組合，也可以直接執行rename.py
