@@ -70,10 +70,11 @@ python vo.py  --input ./frames/ --camera_parameters camera_parameters.npy
 
 <br />
 說明:
-本次實驗主要在比較orb+bruteforce matcher, superpoint+flann matcher, superpoint+superglue 三種方法對於trajectory的預測情形，以及和groundtruth做比較。我使用的資料集是來自於KITTI。
-<br />
+本次實驗主要在比較orb+bruteforce matcher, superpoint+flann matcher, superpoint+superglue 三種方法對於trajectory的預測情形，以及和groundtruth做比較。我使用的資料集是來自於KITTI。<br />
+
 如何執行:
 ```
 python trajectory.py  --detector superpoint --matcher superglue
 ```
+<br />
 --detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。
