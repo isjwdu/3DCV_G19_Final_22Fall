@@ -62,6 +62,24 @@ python vo.py  --input ./frames/ --camera_parameters camera_parameters.npy
 ```
 --input 後面放置的參數為影像所放置的資料夾，--camera_parameters 後面所放置的參數為相機的內在參數檔案。
 
+
+所使用的環境:<br />
+numpy<br />
+cv2<br />
+sys<br />
+os<br />
+argparse<br />
+glob<br />
+torch<br />
+collections<br />
+matplotlib<br />
+copy<br />
+pathlib<br />
+open3d<br />
+
+
+
+
 #4.實驗三3.2- trajectory 的比較
 負責同學:R11943113 葉冠宏
 <br />
@@ -77,4 +95,18 @@ python vo.py  --input ./frames/ --camera_parameters camera_parameters.npy
 python trajectory.py  --detector superpoint --matcher superglue
 ```
 <br />
---detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。
+--detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。<br />
+
+所使用的環境:<br />
+numpy<br />
+cv2<br />
+sys<br />
+os<br />
+argparse<br />
+glob<br />
+torch<br />
+collections<br />
+matplotlib<br />
+copy<br />
+pathlib<br />
+
