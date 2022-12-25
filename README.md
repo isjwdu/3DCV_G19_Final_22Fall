@@ -6,7 +6,9 @@
 
 #2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
 負責同學:R11922185 杜嘉煒<br />
-##所需環境為<br />
+<br />
+
+所需環境為:<br />
 Python == 3.8.10 
 
 Torch == 1.13.0a0+936e930
@@ -32,7 +34,7 @@ sudo apt-get install ffmpeg libsm6 libxext6  -y
 python trainer.py 
 ```
 
-## Additional useful command line parameters
+Additional useful command line parameters
 `--epoch` 可以設置epoch數目 (default: `20`).
 
 `--train_path` 用來設置你的訓練資料集的位置.
@@ -41,6 +43,6 @@ python trainer.py
 
 `--show_keypoints` 可以設置是否查看關鍵點的位置 (default: `False`).
 
-##更換訓練集
+更換訓練集:
 
 若要更換爲自己的訓練集，需要命名為`COCO`+`數字`的組合，也可以直接執行rename.py
