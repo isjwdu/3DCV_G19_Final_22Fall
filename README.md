@@ -1,8 +1,12 @@
 # README
 
 #1.實驗一:SuperGlue在室内與室外效果的對比驗證<br />
-負責同學:R10922172 彭旻翊
+負責同學:R10922172 彭旻翊<br />
 
+實驗方式:<br />
+一、indoor的圖片用於outdoor的model。outdoor的圖片用於indoor的model。<br />
+二、調整resize參數<br />
+三、調整max_superpoints參數<br />
 
 #2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
 負責同學:R11922185 杜嘉煒<br />
@@ -96,8 +100,8 @@ python trajectory.py  --detector superpoint --matcher superglue
 ```
 <br />
 --detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。<br />
-
 所使用的環境:<br />
+
 numpy<br />
 cv2<br />
 sys<br />
