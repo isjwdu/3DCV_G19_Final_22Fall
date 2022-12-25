@@ -1,6 +1,6 @@
-#三維電腦視覺與深度學習應用-第十九組-SuperGlue: Learning Feature Matching with Graph Neural Networks
+# 三維電腦視覺與深度學習應用-第十九組-SuperGlue: Learning Feature Matching with Graph Neural Networks
 
-#1.實驗一:SuperGlue在室内與室外效果的對比驗證<br />
+# 1.實驗一:SuperGlue在室内與室外效果的對比驗證<br />
 負責同學:R10922172 彭旻翊<br />
 
 實驗方式:<br />
@@ -8,7 +8,9 @@
 二、調整resize參數<br />
 三、調整max_superpoints參數<br />
 
-#2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
+放置資料夾:Exp_3_1<br />
+
+# 2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
 負責同學:R11922185 杜嘉煒<br />
 <br />
 
@@ -51,7 +53,7 @@ Additional useful command line parameters
 
 若要更換爲自己的訓練集，需要命名為`COCO`+`數字`的組合，也可以直接執行rename.py
 
-#3.實驗三3.1- Visual Odometry的比較
+# 3.實驗三3.1- Visual Odometry的比較
 負責同學:R11943113 葉冠宏
 <br />
 <br />
@@ -84,11 +86,12 @@ open3d<br />
 
 
 
-#4.實驗三3.2- trajectory 的比較
+# 4.實驗三3.2- trajectory 的比較
 負責同學:R11943113 葉冠宏
 <br />
 <br />
 放置資料夾:Exp_3_2
+
 
 <br />
 說明:
