@@ -1,1 +1,3 @@
-p
+直接參考官方網站的開源程式碼:
+
+https://github.com/magicleap/SuperGluePretrainedNetwork
