@@ -46,3 +46,34 @@ Additional useful command line parameters
 更換訓練集:
 
 若要更換爲自己的訓練集，需要命名為`COCO`+`數字`的組合，也可以直接執行rename.py
+
+#3.實驗三3.1- Visual Odometry的比較
+負責同學:R11943113 葉冠宏
+<br />
+<br />
+放置資料夾:Exp_3_1
+<br />
+說明:
+本次實驗主要在比較superpoint+superglue用於作業三之效果呈現。由於原本作業三已經執行過orb+brute-force matcher，因此資料夾的code中僅執行superpoint+superglue的部分。<br />
+
+如何執行:
+```
+python vo.py  --input ./frames/ --camera_parameters camera_parameters.npy
+```
+--input 後面放置的參數為影像所放置的資料夾，--camera_parameters 後面所放置的參數為相機的內在參數檔案。
+
+#4.實驗三3.2- trajectory 的比較
+負責同學:R11943113 葉冠宏
+<br />
+<br />
+放置資料夾:Exp_3_2
+
+<br />
+說明:
+本次實驗主要在比較orb+bruteforce matcher, superpoint+flann matcher, superpoint+superglue 三種方法對於trajectory的預測情形，以及和groundtruth做比較。我使用的資料集是來自於KITTI。
+<br />
+如何執行:
+```
+python trajectory.py  --detector superpoint --matcher superglue
+```
+--detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。
