@@ -1,11 +1,10 @@
 # README
+##實驗一:SuperGlue在室内與室外效果的對比驗證
+負責同學:R10922172 彭旻翊
 
 
-
-
-
-
-## 所需環境為
+##實驗二:Physarum Dynamics 結合 SuperGlue
+###所需環境為
 Python == 3.8.10 
 
 Torch == 1.13.0a0+936e930
@@ -26,7 +25,7 @@ sudo apt-get update
 sudo apt-get install ffmpeg libsm6 libxext6  -y
 
 ```
-## 如何執行
+###如何執行
 ```
 python trainer.py 
 ```
@@ -40,6 +39,6 @@ python trainer.py
 
 `--show_keypoints` 可以設置是否查看關鍵點的位置 (default: `False`).
 
-## 更換訓練集
+###更換訓練集
 
 若要更換爲自己的訓練集，需要命名為`COCO`+`數字`的組合，也可以直接執行rename.py
