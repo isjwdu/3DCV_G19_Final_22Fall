@@ -5,7 +5,7 @@
 
 
 #2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
-負責同學:R11922185 杜嘉煒
+負責同學:R11922185 杜嘉煒<br />
 ##所需環境為<br />
 Python == 3.8.10 
 
@@ -27,7 +27,7 @@ sudo apt-get update
 sudo apt-get install ffmpeg libsm6 libxext6  -y
 
 ```
-##如何執行
+如何執行:
 ```
 python trainer.py 
 ```
