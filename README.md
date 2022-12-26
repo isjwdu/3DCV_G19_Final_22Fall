@@ -2,27 +2,48 @@
 
 # 1.實驗一:SuperGlue在室内與室外效果的對比驗證<br />
 負責同學:R10922172 彭旻翊<br />
-放置資料夾:Exp_3_1<br />
+放置資料夾:Exp_1<br />
 
 ## 實驗方式:<br />
-一、indoor的圖片用於outdoor的model。outdoor的圖片用於indoor的model。<br />
-二、調整resize參數<br />
-三、調整max_superpoints參數<br />
+一、針對indoor, outdoor不同場景使用不同model, 觀察效果
+二、調整並嘗試不同resize參數, 並觀察input size對結果的影響為何 <br />
+三、調整並嘗試不同max_superpoints參數, 並觀察superpoints數量對結果的影響為何<br />
+四、嘗試將indoor的圖片用於outdoor的model。outdoor的圖片用於indoor的model。觀察效果<br />
+
+## 所需環境為:<br />
+* Python 3 >= 3.5
+* PyTorch >= 1.1
+* OpenCV >= 3.4 (4.1.2.30 recommended for best GUI keyboard interaction, see this [note](#additional-notes))
+* Matplotlib >= 3.1
+* NumPy >= 1.18
+
+## 如何執行:
+
+The `--input` flag also accepts a path to a directory. We provide a directory of sample images.
+
+```
+./demo_superglue.py --input input/indoor/ --output_dir output/dump_indoor --resize 320 240 --no_display
+```
+
+The `--resize` flag can be used to resize the input image in three ways:
+
+1. `--resize` `width` `height` : will resize to exact `width` x `height` dimensions
+2. `--resize` `max_dimension` : will resize largest input image dimension to `max_dimension`
+3. `--resize` `-1` : will not resize (i.e. use original image dimensions)
+4. `--max_keypoints` : Maximum number of keypoints detected by Superpoint ('-1' keeps all keypoints) (default: -1)
+5. Use `--show_keypoints` to visualize the detected keypoints (default: `False`).
+
 
 # 2.實驗二:Physarum Dynamics 結合 SuperGlue <br />
 負責同學:R11922185 杜嘉煒<br />
 放置資料夾:Exp_3_2<br />
 
 ## 所需環境為:<br />
-Python == 3.8.10 
-
-Torch == 1.13.0a0+936e930
-
-OpenCV_Python == 4.5.1
-
-matplotlib == 3.6.2
-
-NumPy == 1.23.5
+* Python == 3.8.10 
+* Torch == 1.13.0a0+936e930
+* OpenCV_Python == 4.5.1
+* matplotlib == 3.6.2
+* NumPy == 1.23.5
 
 ## 在使用過程中可能會出現：
 
@@ -67,18 +88,18 @@ python vo.py  --input ./frames/ --camera_parameters camera_parameters.npy
 
 
 ## 所使用的環境:<br />
-numpy<br />
-cv2<br />
-sys<br />
-os<br />
-argparse<br />
-glob<br />
-torch<br />
-collections<br />
-matplotlib<br />
-copy<br />
-pathlib<br />
-open3d<br />
+* numpy
+* cv2
+* sys
+* os
+* argparse
+* glob
+* torch
+* collections
+* matplotlib
+* copy
+* pathlib
+* open3d
 
 # 4.實驗三3.2- trajectory 的比較
 負責同學:R11943113 葉冠宏<br />
@@ -95,16 +116,15 @@ python trajectory.py  --detector superpoint --matcher superglue
 --detector 後面所放的參數為所欲使用的detector演算法，包含superpoint或是ORB。--matcher 後面所放置的參數為所欲使用的matching演算法，包含superglue,flann,或是bruteforce matcher。<br />
 
 ## 所使用的環境:
-
-numpy<br />
-cv2<br />
-sys<br />
-os<br />
-argparse<br />
-glob<br />
-torch<br />
-collections<br />
-matplotlib<br />
-copy<br />
-pathlib<br />
+* numpy
+* cv2
+* sys
+* os
+* argparse
+* glob
+* torch
+* collections
+* matplotlib
+* copy
+* pathlib
 
