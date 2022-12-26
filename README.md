@@ -5,7 +5,7 @@
 放置資料夾:Exp_1<br />
 
 ## 實驗方式:<br />
-一、針對indoor, outdoor不同場景使用不同model, 觀察效果
+一、針對indoor, outdoor不同場景使用不同model, 觀察效果<br />
 二、調整並嘗試不同resize參數, 並觀察input size對結果的影響為何 <br />
 三、調整並嘗試不同max_superpoints參數, 並觀察superpoints數量對結果的影響為何<br />
 四、嘗試將indoor的圖片用於outdoor的model。outdoor的圖片用於indoor的model。觀察效果<br />
